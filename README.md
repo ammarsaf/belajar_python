@@ -1,2 +1,2 @@
 # Pengenalan
-Repositori ini ditulis untuk pemula yang berminat untuk mempelajari Python dalam Bahasa Melayu. 
+Repositori ini ditulis untuk pemula yang berminat untuk Belajar Python dalam Bahasa Melayu. 

@@ -18,3 +18,11 @@ Pada tahun 1999, Guido telah mengantar satu sebuah kertas cadangan kepada DARPA 
 5. Mampu diaplikasikan dalam tugasan harian.
 
 Python kemudian berkembang dan berkembang daripada versi 0.9 hingga yang terkini iaitu Python 3.9.10 (pada tarikh 6/9/2021). Walaupun timbul isu dimana Python  mengamalkan “_backward incompatibility_” apabila penambahbaikan dilakukan daripada satu versi kepada versi berikutnya, Python tetap menapak langkah ke hadapan dengan versi yang ditambah baik daripada semasa ke semasa.
+
+Pada tahun 2019, Python telah dinobatkan oleh Github sebagai bahasa pengaturcaraan kedua terpopular selepas JavaScript. Mengikut sebuah bancian, Python juga telah menjadi 10 bahasa yang telah dipaparkan ke dalam bahagian kriteria iklan kerja. Ini sebuah pencapaian yang sangat hebat hasil daripada sebuah hobi yang akhirnya menjadi bahasa digital yang mereformasi dunia teknologi.
+
+![](file:///C:\Users\User\AppData\Local\Temp\ksohtml14632\wps117.jpg) 
+
+Rajah 4 Github
+
+Python terus berevolusi apabila pengaturcara membina berbagai-bagai jenis _library_ yang mempunyai matlamat tersendiri untuk digunakan pada hari ini sekaligus memberi manfaat dan kemudahan kepada komuniti pengguna Python.

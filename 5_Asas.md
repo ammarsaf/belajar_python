@@ -168,7 +168,7 @@ o variable.lower( )
 
 Contoh kod:
 ```python
->>> x = 'Nama** **penulis** **adalah Ahmad.'
+>>> x = 'Nama penulis adalah Ahmad.'
 >>> print(x.upper())
 >>> print(x.lower())
 
@@ -642,7 +642,7 @@ Contoh _function_:
 
 ```python
 >>> def kucing(nama):
->>> 	print ('Nama kucing** **penulis****' + ' ' +** **nama****):
+>>> 	print ('Nama kucing penulis' + ' ' + nama):
 >>> kucing('Oyen')
 Nama kucing penulis Oyen
 ```

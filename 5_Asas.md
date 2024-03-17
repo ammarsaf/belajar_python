@@ -1193,3 +1193,85 @@ Bagi setiap _library_, terdapat pelbagai modul dan fungsi yang telah tersedia un
 >>> dir (dt)
 ['MAXYEAR','MINYEAR','__builtins__','__cached__','__doc__','__file__','__loader__','__name__','__package__','__spec__','date','datetime','datetime_CAPI','sys','time','timedelta','timezone','tzinfo']
 ```
+# **Ralat**
+
+## **Pengenalan**
+
+Ralat atau _error_ adalah sebuah kesalahan yang berlaku semasa dalam penulisan kod yang berpunca daripada pelbagai faktor. Antaranya adalah seperti salah ejaan, tiada perenggan, salah penggunaan metod, kesalahan argumen, jenis data, dan lain-lain lagi.
+
+##  **Nyahpepijat**
+
+Untuk pemula, menulis kod adakalanya menjadi sukar apabila berhadapan dengan ralat. Oleh hal yang demikian, tugas pengaturcara bukan sahaja menulis kod tetapi juga melakukan penyiasatan bagi memeriksa bahagian manakah yang menjadi punca kepada sintaks yang menuju kepada ralat.  Ini yang dipanggil sebagai; nyahpepijat atau _debugging_.
+
+-- gambar 
+
+_Rajah_ _7__: Rama-rama di dalam komputer._
+
+Sejarah perkataan pepijat (bug) ini bermula apabila seorang saintis komputer Amerika, Grace Brewster Murray Hopper yang sedang menggunakan komputer MarkII di Universiti Harvard, apabila rakan sekerjanya menemui rama-rama yang telah tersekat di bahagian dalam komputer yang menyebabkan komputer tersebut gagal daripada untuk berfungsi. Sejak daripada itu, beliau meggunakan pepijat sempena peristiwa tersebut untuk merujuk keadaan dimana kod mengalami masalah dan tidak dapat dilaksanakan.
+
+Dalam Python, kita boleh mengendalikan ralat dengan menggunakan **try****, except** dan **finally.**
+
+##  **Try, Except, Finally** 
+
+Pertamanya kita perlu memahami dahulu maksud **try****, except** dan **finally.**
+
+| Kod         | Maksud                                                                 |
+| ----------- | ---------------------------------------------------------------------- |
+| **try**     | Menguji baris-baris kod ini sama ada terdapat ralat atau tidak padanya |
+| **except**  | Jika ralat berlaku, buat sesuatu.                                      |
+| **finally** | Buat sesuatu jika ralat tidak berlaku atau berlaku.                    |
+
+Kita mulakan dengan kod ringkas:
+```python
+>>> try:
+>>>	x = ‘hello world’
+>>>	print (x)
+>>> except:
+>>> 	print ('Please define variable x.')
+
+hello world
+```
+Output menunjukkan tiada ralat berlaku.
+
+Kita cuba hasilkan ralat dengan tidak meletakkan nilai-x;
+
+```python
+>>> try:
+		print (x)
+
+>>> except:
+		print ('Ralat di sini')
+
+Ralat di sini
+```
+Output menunjukkan mesej ‘Ralat di sini’ kerana tiada nilai x yang dinyatakan dalam blok kod diatas.
+
+Jika anda inginkan mesej ralat daripada Python, anda boleh tulis seperti berikut;
+```python
+>>> try:
+>>>	print (x)
+>>> except Exception as e1:
+>>>	print ('Ralat di sini')
+>>>	print(e1)
+
+Ralat di sini
+name 'x' is not defined
+```
+Selain daripada ia mengeluarkan mesej yang anda mahukan, ia juga mengeluarkan mesej ralat daripada Python _interpreter_ yang menjalankan kod.
+
+Mari kita kembangkan lagi dengan penggunaan **finally.**
+
+```python
+>>> try:
+>>> print (x)
+>>> except Exception as e1:
+>>> print ('Ralat di sini')
+>>> print(e1)
+>>> finally:
+>>> print(‘Kod diatas telah diuji’)
+
+Ralat di sini
+name 'x' is not defined
+Kod diatas telah diuji
+```
+Mesej dalam blok **finally** akan terpapar dalam keadaan sama ada ralat berlaku ataupun tidak.

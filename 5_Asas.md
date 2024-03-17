@@ -529,9 +529,11 @@ False
 **not** digunakan bagi mendapatkan _output_ yang songsang daripada _output_ yang sebenar.
 
 Contoh kod;
-
-![](file:///C:\Users\User\AppData\Local\Temp\ksohtml70772\wps28.png)
-
+```python
+>>> x = 6
+>>> print (not (x <7 and x <10))
+False
+```
 Jika kita dapat membayangkan kod print tersebut tanpa **not**, kita dapat melihat premis yang diberikan adalah **True**. Namun, disebabkan terdapat BO _not_ di awalan, maka _output_ yang terhasil adalah songsang daripada apa yang sepatutnya.
 
 4.    **is**
@@ -540,24 +542,39 @@ Jika kita dapat membayangkan kod print tersebut tanpa **not**, kita dapat meliha
 
 Contoh kod;
 
-![](file:///C:\Users\User\AppData\Local\Temp\ksohtml70772\wps29.png)
+```python
+>>> x = 3
+>>> y = 3
+>>> print (x is y)
+True
+```
 
 **is not** pula sebalinya. Jika salah satu daripad objek tersebut adalah berbeza, maka _output_ akan menghasilkan **True**.
 
-![](file:///C:\Users\User\AppData\Local\Temp\ksohtml70772\wps30.png)
-
+```python
+>>> x = 3
+>>> y = 5
+>>> print (x is not y)
+True
+```
 5.  **in**
 
 **in** akan memberikan _output_ **True** jika urutan yang mempunyai nilai tertentu terdapat di dalam objek yang dirujuk. Juga sebaliknya jika tiada, maka _ouput_ adalah **False**.
 
 Contoh,
-
-![](file:///C:\Users\User\AppData\Local\Temp\ksohtml70772\wps31.png)
-
+```python
+>>> x = ['bunga', 'daun']
+>>> print('daun' in x)
+True
+```
 **not in** menyongsangkan apa yang dilakukan oleh in. Jika nilai tersebut tiada dalam urutan (list) objek, maka _output_ adalah **True**. Begitu juga sebaliknya.
 
-![](file:///C:\Users\User\AppData\Local\Temp\ksohtml70772\wps32.png)
+```python
+>>> x = ['bunga', 'daun']
+>>> print('kayu' not in x)
+True
 
+```
   
 
 ##  **Conditional Statement**
@@ -576,7 +593,17 @@ Dalam bidang pengaturcaraan, syarat yang diberi oleh anda dikenali sebagai **_co
 
 Dalam sebuah pembentukan _condition_ terdapat beberapa komponen yang digunakan iaitu, **if****,** **elif****,** dan **else**. Terdapat sebab mengapa penulis menulis ia mengikut susunan begini. Lihat contoh kod dibawah;
 
-![](file:///C:\Users\User\AppData\Local\Temp\ksohtml70772\wps33.png)
+```python
+>>> x = 10
+>>> if x >10:
+>>>	print('x is bigger than 10')
+>>> elif x = = 10:**
+>>>	print('x is equal to 10.')
+>>> elif x < 10:
+>>> 	print('x is less than 10')
+
+x is equal to 10.
+```
 
 · **if** ditulis hanya untuk syarat pertama. Syarat pertama dalam kod diatas adalah nilai x perlu melebihi 10. Untuk syarat seterusnya, kata kunci **elif** akan digunakan sebagai awalan syarat tersebut. Syarat kedua dan ketiga adalah nilai x perlu bersamaan dengan 10 ataupun nilai x adalah kurang daripada 10.
 
@@ -585,9 +612,16 @@ Bagaimana pula dengan **else**?
 · **else** digunakan untuk syarat akhir code tanpa apa-apa syarat yang mengikatnya, dimana bererti, selain daripada syarat-syarat yang dikenakan di atasnya, akan terpakai padanya.
 
 Contoh kod;
-
-![](file:///C:\Users\User\AppData\Local\Temp\ksohtml70772\wps34.png)
-
+```python
+>>> x = 6
+>>> if x >10:
+>>> 	print('x is bigger than 10')
+>>> elif x = = 10:*
+>>> 	print('x is equal to 10.')*
+>>> else:**
+>>>	print('x is less than 10')
+x is less than 10.
+```
 Dengan hanya menggunakan arahan mudah ini, anda mampu memanipulasi kod supaya mengikuti arahan yang kita kehendaki secara automatik. Subtopik ini yang menjadi asas kepada kewujudan mesin pembelajaran apabila kod ini seolah-olah mampu ‘berfikir’ lalu membuat keputusan.
 
   
@@ -606,23 +640,45 @@ Maklumat dapat dipindahkan ke dalam fungsi melalui _argument_.
 
 Contoh _function_:
 
-![](file:///C:\Users\User\AppData\Local\Temp\ksohtml70772\wps35.png)
-
+```python
+>>> def kucing(nama):
+>>> 	print ('Nama kucing** **penulis****' + ' ' +** **nama****):
+>>> kucing('Oyen')
+Nama kucing penulis Oyen
+```
 Jika diperhatikan, maklumat **'Oyen'** telah dipindahkan ke dalam _argument_ **nama** pada fungsi **def** **kucing** dan _output_ yang terhasil bergabung bersama string “**Nama kucing** **penulis**'.
 
-Selain menggunakan print untuk mengeluarkan _output_, **def** biasanya menggunakan **return** untuk merujuk kepada definisi itu sendiri.
+Bagi menghasilkan output, fungsi definisi akan menggunakan kata-kunci `return` yang merujuk kepada hasil akhir fungsi tersebut.
 
 Contoh,
 
-![](file:///C:\Users\User\AppData\Local\Temp\ksohtml70772\wps36.png)
-
+```python
+>>> def y(x):
+>>> 	 return 10 + x
+>>> y(7)
+17
+```
 Bilangan _*argument_ adalah tidak terbatas. Bergantung kepada fungsi apa yang ingin ditulis oleh pengaturcara.
 
-![](file:///C:\Users\User\AppData\Local\Temp\ksohtml70772\wps37.png)
-
+```python
+>>> def add_this_value(val_1, val_2, val_3):
+>>> 	 return val_1 + val_2 + val_3
+>>> add_this_value(10, 20, 30)
+60
+```
 _Function_  juga boleh digunapakai dalam _function_ yang lain. Misalnya;
 
-![](file:///C:\Users\User\AppData\Local\Temp\ksohtml70772\wps38.png)
+```python
+>>> def return_max_val(number_list):
+>>> 	max = 0
+>>> 	for val in number_list:
+>>> 		if val > max:
+>>> 			max = val
+>>> max_value = return_max_val([1,2,3])
+>>> add_this_value(max_value, 20, 30)
+53
+```
+
 
 Jika diperhatikan dalam _function_ return_max_val _, function_ ini akan mengambil _list_ nombor sebagai argumen. Daripada argumen tersebut, akan digunakan pada _for-loop_ yang mana algoritma ini akan mengenalpasti nombor yang besar daripada nombor sebelumnya dan nilai tersebut akan disimpan pada _variable_ max. _Function_ ini akan memhasilkan hasil akhir nombor terbesar dalam _list_  nombor tadi, dan nilai tersebut akan digunakan dalam _function_ add_this_value untuk proses tambah.
 
@@ -636,17 +692,19 @@ Dalam Python menyediakan satu fungsi yang dinamakan input(). Input mengambil mak
 
 Kod boleh ditulis seperti berikut;
 
-![](file:///C:\Users\User\AppData\Local\Temp\ksohtml70772\wps39.png)
-
+```python
+>>> x = input ('Insert your number here:')
+Insert your number here:
+```
 Untuk menggunakan **input()**, anda perlu meletakkan _prompt_; sebuah arahan untuk diberikan kepada pengguna supaya memasukkan maklumat yang sepatutnya ke dalam program. Di dalam kod di atas, _prompt_ yang digunakan adalah 'Insert your number here:'.
 
 _Output prompt_ seperti di atas akan terhasil dimana program akan meminta _input_ apa ,yang kita mahukan. Selepas menulis apa _input,_  tekan _Enter_. Dan kod akan berjalan seperti biasa.
 
-Selain fleksibel, penggunaan input() akan menghasilkan kod yang lebih interaktif dan menarik.
+Penggunaan input() akan menghasilkan kod yang interaktif.
 
   
 
-##  **L****oop**
+##  Loop
 
 Dalam pengaturcaraan, _loop_ (_loop_) adalah sebuah konsep dimana beberapa siri perbuatan yang sama yang dilakukan berulang kali.
 
@@ -674,8 +732,6 @@ Kerja yang sama dan berulang ini dipanggil sebagai _iteration_ _(_iteration). D
 
 Kod yang mengandungi arahan untuk menjalankan kerja yang sama yang berulang tersebut dipanggil sebagai _loop_.
 
-![](file:///C:\Users\User\AppData\Local\Temp\ksohtml70772\wps40.jpg) 
-
 Selain daripada itu, anda juga boleh meletakkan _conditionl statement_ kepada Python seperti, apabila kesemua 100 burger telah siap, sila berhenti (_break_).
 
 Di dalam Python, terdapat dua jenis _loop_ iaitu: 
@@ -689,39 +745,78 @@ Kedua-duanya mempunyai objektif yang sama iaitu untuk mengautomatikkan beberapa 
 ###  **For** **loop**
 
 _For loop_ digunakan untuk menjalankan _iteration_ pada struktur data yang _iterable_ iaitu _list, tuple,_ dan _dictionary_. Untuk menggunakan _for_ _loop_, kod seperti berikut akan ditulis iaitu,
-
-![](file:///C:\Users\User\AppData\Local\Temp\ksohtml70772\wps41.png)
+```python
+for data in y:
+	# do_something_1
+	# do_something_2
+```
 
 Contoh kodnya,
-
-![](file:///C:\Users\User\AppData\Local\Temp\ksohtml70772\wps42.png)
+```python
+>>> y = [1, 2, 3, 4, 5]
+>>> for data in y:
+>>> 	print(data)
+1
+2
+3
+4
+5
+```
 
 Apa yang berada dibawah _for_ haruslah diperenggankan (_indent_) bagi menunjukkan arahan tersebut berada dibawah lingkungan _loop_ yang dicipta. data mewakili nilai-nilai yang terkandung di dalam list bernama y.
 
 Bagi menambah syarat ke dalam kod, ia boleh ditulis dengan,
 
-![](file:///C:\Users\User\AppData\Local\Temp\ksohtml70772\wps43.png)
-
+```python
+>>> y = [1,2,3,4,5,6]
+>>> for data in y:
+>>> 	if data < 4:
+>>> 	print(data)
+1
+2
+3
+```
 _loop_ membaca senarai nombor yang berada dalam _list_ y dan jika terdapat nilai yang kurang daripada 4, maka hanya nilai tersebut yang akan dikeluarkan _output_. Jika nilai lebih daripada 4, ini memberhentikan proses _loop_.
 
 Selain daripada itu, terdapat satu lagi cara bagi memberhentikan proses _loop_ iaitu menggukan **break**.
 
-![](file:///C:\Users\User\AppData\Local\Temp\ksohtml70772\wps44.png)
-
+```python
+>>> y = [1,2,3,4,5,6]
+>>> for data in y:
+>>>     print(data)
+>>>     if data > 4:
+>>>        break
+1
+2
+3
+4
+5
+```
 _loop_ akan membaca senarai nilai dalam _list_-y. Jika _iteration_ menemui nilai yang lebih daripada 4 (iaitu 5 dalam senarai ini), maka _loop_ akan berhenti. Tetapi 5 tetap dihasilkan kerana nilai 5 adalah kayu penanda di dalam kod supaya ia diberhentikan. Dalam kod ini, _iteration_ setelah menjumpai 5, maka dengan itu, _loop_ harus diberhentikan.
 
 Tidak hanya memberhentikan, kita juga boleh menyambung proses _loop_ dengan menggunakan kata kunci **continue**.
 
 Contoh;
-
-![](file:///C:\Users\User\AppData\Local\Temp\ksohtml70772\wps45.png)
-
+```python
+>>> nombor = [1,2,3,4,5]
+>>> for x in nombor:
+>>>   if x == 3:
+>>>     continue
+>>> print(x)
+1
+2
+4
+```
 Apabila _iteration_ menemui nilai 3, maka _loop_ diberitahu supaya meneruskan proses _iteration_ hingga ke data terakhir iaitu 5. Nombor 3 tidak terhasil kerana 3 adalah kayu ukur penanda supaya meneruskan _iteration_. Cara ini sangat berguna jika kita ingin memeriksa kewujudan nombor atau string di dalam sebuah list itu. Jika ia wujud, maka teruskan. Jika tidak wujud, iteration tidak akan diteruskan.
 
 Contoh _loop_ **for** yang menggunakan **dictionary**:
-
-![](file:///C:\Users\User\AppData\Local\Temp\ksohtml70772\wps46.png)
-
+```python
+>>> data = {'nama': 'Jack', 'hobi' : 'badminton'}
+>>> for k,v in data.items():
+>>> 	print(k,v)
+nama Ammar
+hobi badminton
+```
 Kod di atas menggunakan data dalam bentuk **dictionary**. Dalam _loop_ for, kod ini telah menggunakan dua _variable_ bagi menyimpan elemen-elemen di dalam dictionary iaitu **k** dan **v**.
 
 Data pula telah menggunakan **.items()** dimana salah satu metod Dictionary yang mana berfungsi untuk memasangkan key dan value di dalam dictionary. Apa yang ingin disampaikan adalah, anda boleh menggunakan lebih daripada 1 _variable_ di dalam _loop_ for bagi menjalankan iteration.
@@ -742,25 +837,35 @@ Contoh;
 
 Nombor meningkat:
 
-![](file:///C:\Users\User\AppData\Local\Temp\ksohtml70772\wps47.png)
-
+```python
+>>> for data in range(1, 4, 1):
+>>> 	print(data)
+1
+2
+3
+```
 Nombor yang terhasil adalah 1, 2 dan 3. Nombor 4 tidak termasuk seperti yang telah dinyatakan diatas.
 
 Nombor menurun:
 
-![](file:///C:\Users\User\AppData\Local\Temp\ksohtml70772\wps48.png)
+
 
 Tanpa meletakkan nilai akhir dan nilai anjak:
 
-![](file:///C:\Users\User\AppData\Local\Temp\ksohtml70772\wps49.png)
+```python
+>>> for data in range(5, 1, -1):
+>>> 	print(data)
+5
+4
+3
+```
 
-|   |   |
-|---|---|
-|**Indeks**|**Nilai output**|
-|1|0|
-|2|1|
-|3|2|
-|4|3|
+| **Indeks** | **Nilai output** |
+| ---------- | ---------------- |
+| 1          | 0                |
+| 2          | 1                |
+| 3          | 2                |
+| 4          | 3                |
 
 ####  **enumerate ( )**
 
@@ -768,7 +873,15 @@ Terdapat sebuah fungsi di yang dapat membantu kod mengira jumlah _iteration_ ya
 
 Mari lihat contoh penggunaan **enumerate()**.
 
-![](file:///C:\Users\User\AppData\Local\Temp\ksohtml70772\wps50.png)
+```python
+>>> name = ['Azizul', 'Esma', 'Faiq', 'Aqhmal']
+>>> for data in enumerate(name):
+>>>    print(data)
+(0, 'Azizul')
+(1, 'Esma')
+(2, 'Faiq')
+(3, 'Aqhmal')
+```
 
 Seperti yang anda dapat lihat pada _output_ data di atas, pada setiap elemen di dalam _list_ **name**, terdapat nilai indeks yang bersebelahan dengannya yang mengira bilangan _iteration_ yang telah dilakukan.
 
@@ -786,7 +899,18 @@ _While loop_  yang biasa terdiri daripada 3 komponen asas iaitu:
 
 Mari lihat contoh kod,
 
-![](file:///C:\Users\User\AppData\Local\Temp\ksohtml70772\wps51.png)
+```python
+>>> k = 1
+>>> while k < 5:
+>>>     print(k)
+>>>    k += 1
+
+1
+2
+3
+4
+5
+```
 
 Nilai k adalah **nilai permulaan** supaya _loop_ dapat dijalankan. Setelah itu, _loop_ diteruskan dengan **syarat**, iaitu selagi mana nilai k  kurang daripada 5, maka _loop_ akan diteruskan. Pada _output_ pertama iaitu 1, nilai k yang baharu ini akan masuk ke dalam persamaan k += 1  yang sama erti dengan k = k + 1.
 
@@ -794,13 +918,22 @@ Nilai 1 akan masuk pada nilai k. Maka, nilai k yang baru terhasil iaitu k bersam
 
 Seperti juga _for loop_, dalam _while loop_ juga menggunakan _break_ dan _continue_ dengan tujuan yang sama iaitu memutuskan _loop_ dan menyambung _loop_. Contoh,
 
-![](file:///C:\Users\User\AppData\Local\Temp\ksohtml70772\wps52.png)
-
+```python
+>>> k = 1
+>>> while k < 7:
+>>> print(i)
+>>> if (k == 4):
+>>>      break
+>>>    k += 1
+1
+2
+3
+4
+```
 Apabila _loop_ bertemu dengan nilai k baharu yang bernilai 4, maka _loop_ akan terus diberhentikan serta merta.
 
-![](file:///C:\Users\User\AppData\Local\Temp\ksohtml70772\wps53.png)
 
-_L__oop_ akan melangkau nilai 4 apabila _loop_ sampai ke nilai k baharu 4 dan meneruskan _loop_ hingga ke nilai 7 dan berhenti.
+_Loop_ akan melangkau nilai 4 apabila _loop_ sampai ke nilai k baharu 4 dan meneruskan _loop_ hingga ke nilai 7 dan berhenti.
 
 ###  **While** **True**
 
@@ -810,27 +943,56 @@ Namun, kita sebenarnya boleh mencipta _loop_ yang berterusan selama-lamanya tan
 
 Dalam Python, kita akan gunakan **while True** untuk mencipta _loop_ ini.  
 
-![](file:///C:\Users\User\AppData\Local\Temp\ksohtml70772\wps54.png)
-
+```python
+>>> x = 0
+>>> while True:
+>>>     x = x + 1
+>>>     print(x)
+1
+2
+3
+4
+5
+6
+7
+8
+```
 Dalam kod diatas, output akan terhasil selama-lamanya tanpa henti (kecuali anda memberhentikannya) dengan menggunakan  **while True.**
 
 Walaubagaimanapun, anda masih lagi boleh meletakkan keadaan untuk memberhentikan _loop_ ini seperti yang telah kita pelajari sebelum ini dengan menggunakan katakunci **break****.**
 
-![](file:///C:\Users\User\AppData\Local\Temp\ksohtml70772\wps55.png)
-
+```python
+>>> x = 0
+>>> while True:
+>>>     x = x + 1
+>>>     print(x)
+>>>     if x == 5:
+>>>         break
+1
+2
+3
+4
+5
+```
 _Loop_ diatas berhenti apabila mencapai nilai 5.
 
 ###  **Carta Alir** 
 
 Di dalam memahami gerak kerja sebuah kod, terdapat satu cara yang dipanggil Carta Alir (_flow chart_). Carta Alir adalah sebuah penerangan visual menggunakan bentuk dan anak panah bagi menerangkan apa yang berlaku dalam sesebuah kod. Secara amnya, bentuk dan kegunaan bentuk itu dapat difahami seperti berikut.
 
-![](file:///C:\Users\User\AppData\Local\Temp\ksohtml70772\wps56.jpg) 
+-- gambar 
 
  Penggunaan Carta Alir sangat membantu perjalanan proses kod pada peringkat awal. Lihat contoh Carta Alir dengan kod dibawa:
 
-![](file:///C:\Users\User\AppData\Local\Temp\ksohtml70772\wps57.png)  
-
-![](file:///C:\Users\User\AppData\Local\Temp\ksohtml70772\wps58.jpg)  
+```python
+>>> x = 5
+>>> if x > 5:
+>>> 	print('x is bigger than 5')
+>>> elif x == 5'
+>>> 	print('x equal to 5')
+X is equal to 5
+```
+-- gambar 
 
 Melalui Carta Alir di atas, kita dapat melihat apa yang sedang berlaku di dalam kod yang sedang ditulis. Dimana terdapat pernyataaan _if_ dan _elif_ yang telah menyebabkan aliran terpecah kepada dua yang memberi syarat kepada input yang diberikan sebelum menuju kepada arahan seterusnya.
 
@@ -848,14 +1010,41 @@ _Nested_ _loop_  adalah sebuah kod _loop_ yang berada di dalam sebuah _loop_
 
 _Nested loop_ biasanya digunakan dalam struktur data berbilang dimensi.
 
-![](file:///C:\Users\User\AppData\Local\Temp\ksohtml70772\wps59.jpg) 
+-- gambar
 
 Dalam _nested loop_, terdapat 2 jenis _loop_ iaitu _loop_ luar dan _loop_ dalam. _L__oop_ luar akan dilaksanakan terlebih dahulu, tetapi sembelum _loop_ luar berjaya dilaksanakan dengan sempurna, _loop_ dalam akan dilaksanakan barulah _loop_ luar akan sempurna.
 
 Mari kita lihat contoh.
 
-![](file:///C:\Users\User\AppData\Local\Temp\ksohtml70772\wps60.png)
+```python
+>>> import time
 
+>>> x = range(3)
+>>> for i in x:
+>>>    time.sleep(2)
+>>>    print("loop berlangsung...")
+>>>    time.sleep(2)
+>>>    for j in x:
+>>>        print(i, j)
+>>>    time.sleep(2)
+>>>    print("loop sempurna")
+Output:
+loop berlangsung...
+0 0
+0 1
+0 2
+loop sempurna
+loop berlangsung...
+1 0
+1 1
+1 2
+loop sempurna
+loop berlangsung...
+2 0
+2 1
+2 2
+loop sempurna
+```
 Apa yang terjadi dalam _loop_ ini? Mari kita pergi satu persatu.
 
 · Pada baris 3, anda telah menetapkan _variable_ yang menyimpan nilai 0, 1, 2 yang dibentuk menggunakan fungsi **range().**
@@ -874,39 +1063,61 @@ Apa yang terjadi dalam _loop_ ini? Mari kita pergi satu persatu.
 
 Dibawah penulis sertakan gambaran carta alir bagaimana kod diatas berfungsi; (abaikan time.sleep() kerana ia cuma bertujuan untuk melambatkan proses sintaks bagi memperlihatkan proses _loop_. Anda boleh cuba kod ini pada IDE anda dan lihat hasilnya).
 
-![](file:///C:\Users\User\AppData\Local\Temp\ksohtml70772\wps61.jpg) 
+-- gambar
 
-##  **Pe****renggan**
+##  Perenggan
 
 · Indentation
 
 Anda dapat perhatikan bahawa apabila bermulanya masuk tajuk _Function_ dan _Condition_, terdapat satu cara penulisan yang bermula dengan perenggan atau dikenali sebagai _indentation__._
 
 Terdapat dua keadaan dimana _indentation_ digunapakai iaitu semasa menggunakan _Function_ def dan semasa membuat condition. Contoh indentation dalam _Function_,
+```python
 
-**def** **kucing****(nama)****:**
+def kucing(nama):
+<-->print ('Nama kucing penulis' + ' ' +nama):
+```
 
-**ß****---****à** **print ('Nama kucing** **penulis****' + ' ' +** **nama****):**
-
-**ß****---****à** menunjukkan dibawah def perlu mengenakan perenggan. (anak panah cuma ingin merujuk terdapat perenggan di bahagian tersebut dan bukannya perlu menulis anak panah tersebut.)
+`<-->` menunjukkan dibawah def perlu mengenakan perenggan. (anak panah cuma ingin merujuk terdapat perenggan di bahagian tersebut dan bukannya perlu menulis anak panah tersebut.)
 
 Sama juga seperti condition,
 
-![](file:///C:\Users\User\AppData\Local\Temp\ksohtml70772\wps62.png)
-
+```python
+>>> if x > 2:
+>>> <--> print('x bigger than 2.')
+```
 _Nest_ juga ada berlaku di dalam for loop dan while loop,
-
-![](file:///C:\Users\User\AppData\Local\Temp\ksohtml70772\wps63.png)
-
+```python
+>>> car = ['Wira', 'Perodua', 'Saga']
+>>> for data in car:
+>>> <--> print(data)
+Wira
+Perodua
+Saga
+```
 Contoh while loop
 
-![](file:///C:\Users\User\AppData\Local\Temp\ksohtml70772\wps64.png)
-
+```python
+>>> i = 0
+>>> while True:
+>>> <--> print ('Counting is processed...')
+>>> <--> if i == 5:
+>>> <-----> break
+>>> <--> i = i + 1
+>>> print (i)
+Counting is processed...
+Counting is processed...
+Counting is processed...
+Counting is processed...
+Counting is processed...
+Counting is processed...
+5
+```
 _Indentation_ sangat penting dalam pembinaan sebuah kod. Ini kerana ia menetukan arahan tersebut di bawah blok yang spesifik.
 
 Dapat diperhatikan di dalam kod while loop, persamaan i = i + 1 berada di luar kod if dimana ini bermaksud persamaan tersebut tertakluk pada while loop. Untuk penjelasan lebih lanjut di dalam gambar dibawah,
 
-![](file:///C:\Users\User\AppData\Local\Temp\ksohtml70772\wps65.jpg) 
+-- gambar
 
 Mengikut gambarajah di atas, kod bermula dengan while **True**, dimana ini memberi arahan kepada Python untuk terus menerus menjalankan kod dan menghasilkan _string_ “Counting is processed” pada berikutnya. Kod digerakkan menggunakan persamaan **i = i + 1** dan diberikan sebuah kondisi iaitu jika i bersamaan dengan 5, makan kod akan diberhentikan dengan arahan break. Maka terhasillah _output_ yang ditunjukkan di atas.
 
@@ -938,21 +1149,47 @@ Numpy atau Number Python adalah sebuah _library_ yang menyediakan fungsi berkai
 
 Dengan menggunakan numPy, anda boleh mencipta sebuah matriks (_array_) dan melakukan operasi kepadanya.  Mari kita lihat contoh penggunaan numPy.
 
-![](file:///C:\Users\User\AppData\Local\Temp\ksohtml70772\wps66.png)
+```python
+import numpy as np
 
+>>> a = np.array([[1,2,4], 
+                [3,5,7], 
+                [3,4,6]])
+>>> b = np.array([[2,5,9], 
+                 [-1,8,9], 
+                 [2,4,3]])
+>>> c = b - a
+>>> print(c)
+[[ 1  3  5]
+
+ [-4  3  2]
+
+ [-1  0 -3]]
+```
 Dalam kod di atas, _array_ telah dicipta dengan kod np.array dan ditulis di dalamnya matriks dalam bentuk list. Jika dapat dilihat, ini adalaha matriks 3 X 3, dengan 3 lajur dan 3 baris.
 
 Seterusnya, operasi penolakan dilakukan dan anda dapat lihat ouput kepada kod ini adalah hasil tolak _array_ A dan _array_ B.
 
 Anda juga boleh menyeru nombor, lajur dan baris di dalam _array_ dengan menggunakan index koordinat nombor tersebut.
 
-  
-![](file:///C:\Users\User\AppData\Local\Temp\ksohtml70772\wps67.png)
-
+```python
+>>> print(c[0,1])
+>>> print(c[0])
+>>> print(c[0, :])
+>>> print(c[:, 0])
+3
+[ 1  3  5]
+[ 1  3  5]
+[ 1  -4  -1]
+```
 Pada kod pertama, c[0,1] bermakna nilai pada lajur 0 iaitu lajur pertama (ingat semula dalam topik list dimana indeks bermula dari 0) dan juga baris 1 dimana baris kedua.
 
 ###  **dir( )**
 
 Bagi setiap _library_, terdapat pelbagai modul dan fungsi yang telah tersedia untuk digunakan oleh pengaturcara. Modul dan fungsi ini boleh disemak dengan menggunakan fungsi **dir ()** dengan seperti contoh berikut,
 
-![](file:///C:\Users\User\AppData\Local\Temp\ksohtml70772\wps68.png)
+```python
+>>> import datetime as dt
+>>> dir (dt)
+['MAXYEAR','MINYEAR','__builtins__','__cached__','__doc__','__file__','__loader__','__name__','__package__','__spec__','date','datetime','datetime_CAPI','sys','time','timedelta','timezone','tzinfo']
+```

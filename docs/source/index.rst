@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Belajar Python's documentation!
+Jom Belajar Python!
 ==========================================
 
 .. toctree::
@@ -18,12 +18,5 @@ Welcome to Belajar Python's documentation!
    pages/5_Asas
    pages/6_OOP
 
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
 
 

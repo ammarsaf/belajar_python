@@ -20,7 +20,6 @@ Notebook
 
 Notebook adalah sebuah format fail yang digunakan untuk menulis kod Python. Fail berformat Notebook akan diakhiri dengan **_ipynb_****.**
 
-------------------------------------
 Anaconda
 ------------------------------------
 
@@ -38,7 +37,6 @@ Untuk pemasangan perisian Anaconda, ikuti langkah berikut:
 
 4. Kod Python boleh ditulis dan dijalankan secara terus daripada sini.
 
-------------------------------------
 Google Colab
 ------------------------------------
 
@@ -54,7 +52,6 @@ Skrip
 
 Skrip adalah sebuah format fail yang digunakan untuk menulis kod dalam Python. Fail ini akan diakhiri dengan ``.py``  pada nama fail tersebut. Sebagai contoh, project.py.
 
-------------------------------------
 Menggunakan CMD
 ------------------------------------
 

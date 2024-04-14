@@ -60,7 +60,7 @@ Menggunakan CMD
 
 Untuk menghasilkan output daripada fail skrip, anda perlu menggunakan CMD.
 
-CMD atau **Command Prompt** adalah sebuah antaramuka baris-perintah (command-line interface) yang boleh menjalankan perintah, melakukan fungsi tadbir lanjut dan menyelesaikan beberapa masalah dalam Windows. Kita boleh menulis arahan tertentu di sini untuk diberikan kepada komputer.
+CMD atau **Command Prompt** adalah sebuah antaramuka baris-perintah (command-line interface) yang boleh menjalankan perintah, melakukan fungsi tadbir lanjut dan menyelesaikan beberapa masalah dalam Windows. Kita boleh menulis arahan tertentu di sini untuk diberikan kepada komputer.
 
 Bagi menjalankan kod Python menggunakan CMD, langkah-langkah berikut perlu dijalankan terlebih dahulu.
 
@@ -95,7 +95,7 @@ Bagi menjalankan kod Python menggunakan CMD, langkah-langkah berikut perlu dijal
 ------------------------------------
 Perbandingan IDE
 ------------------------------------
-.. list-table:: Perbezaan
+.. list-table:: Perbezaan Antara IDE
 
     * - Metod/IDE
       - Kebaikan
@@ -115,4 +115,4 @@ Perbandingan IDE
 
 Nota kaki:
 
-Untuk permulaan, penulis menyarankan anda menggunakan **Jupyter Notebook** atau **Google Colab** kerana lebih mudah untuk digunakan.
+Untuk permulaan, penulis menyarankan anda menggunakan **Jupyter Notebook** atau **Google Colab** kerana lebih mudah untuk digunakan.

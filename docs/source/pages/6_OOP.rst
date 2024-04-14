@@ -8,7 +8,7 @@ Pengaturcaraan Berorientasi Objek (PBO) atau dalam Inggerisnya, *Object Oriented
 **Class**
 --------------------
 
-*Class* adalah satu himpunan kod yang terdiri daripada beberapa komponen seperti metod, atribut dan objek. Terdapat beberapa tujuan pengaturcara menggunakan pendekatan *Class* iaitu;
+*Class* adalah satu himpunan kod yang terdiri daripada beberapa komponen seperti metod, atribut dan objek. Terdapat beberapa tujuan pengaturcara menggunakan pendekatan *Class* iaitu;
 
 1. Untuk menghimpunkan fungsi-fungsi yang mempunyai tujuan umum yang sama diantara satu sama lain.
 
@@ -40,7 +40,7 @@ Anda boleh menggunakan apa apa nama sahaja untuk mencipta *class* anda yang ters
 
 2. Attribute 
 
-Dalam *class*, *attribute*  (atau juga dikenala sebagai *class attribute*) bertindak seperti *variable* jika di luar *class*. Maklumat ini boleh digunapakai dalam *method* pada langkah seterusnya.
+Dalam *class*, *attribute*  (atau juga dikenala sebagai *class attribute*) bertindak seperti *variable* jika di luar *class*. Maklumat ini boleh digunapakai dalam *method* pada langkah seterusnya.
 
 Di bawah terdapat 2 atribute yang menyimpan maklumat mengenai *class* dan tarikhnya. Terpulang kepada anda ingin meletakkan maklumat apa pada *atribute* ini.
 
@@ -84,7 +84,7 @@ Untuk melaksanakan *method* dalam _class,_ anda perlu menulis satu baris yang di
 	my_math.get_class_info()
 
 Here is the class info: This is a simple mathematical operation. 4 December 2022
-```
+
 *my_math* adalah *object* dalam *class* ini. (tindakan ini dikenali sebagai _instantiate an object from the Class)_ Kemudian *object* ini digunakan untuk *mengakses method* dalam *class* iaitu ``get_class_info()`` yang menghasilkan output info seperti anda dapat lihat diatas.
 
 Mari kita kembangkan lagi kod ini dengan beberapa *method*.
@@ -150,7 +150,7 @@ Kita akan lihat dalam kod dibawah;
 		elif val_b > val_a:
 			return f'Answer: {self.val_b - self.val_a} battery left: {self.battery }'
 
-Dalam kod diatas, ``val_a`` dan ``val_b`` tadi yang ditulis sebagai atribute telah dipadam dan digantikan dengan satu fungsi yang bernama ``__init__()``.
+Dalam kod diatas, ``val_a`` dan ``val_b`` tadi yang ditulis sebagai atribute telah dipadam dan digantikan dengan satu fungsi yang bernama ``__init__()``.
 
 Dengan menggunakan ``__init__()``, ``val_a``dan ``val_b`` tadi boleh diakses dalam ``object`` itu secara terus dan menyebabkan nilai tersebut boleh diubah hanya dengan menggunakan ``object`` tersebut tanpa perlu menukarnya dalam ``class``.
 
@@ -194,18 +194,18 @@ Misalnya anda ingin menulis *class* yang baru, yang mempunyai kebolehan yang sam
 
 Dalam Python OOP, ini dikenali sebagai *inheritance*.
 
-Contoh mudah perwarisan:
+Contoh mudah perwarisan:
 
 .. code-block:: python
 	class TheParents:	
-		def __init__(self, name):
+		def __init__(self, name):
 			self.name = name
 	class TheChild(TheParents):
 	pass
 
 Dalam kod diatas, ``class TheChild`` telah mewarisi kod daripada ``class TheParent``. Selain daripada mewarisi ``method`` daripada Parent, Child juga boleh membentuk *method* barunya sendiri.
 
-Mari kita kembangkan kod diatas supaya **TheC****hild** sdapat mengembakan _class_ nya daripada **The****Parent****s****.**
+Mari kita kembangkan kod diatas supaya **TheC****hild** sdapat mengembakan _class_ nya daripada **The****Parent****s****.**
 
 .. code-block:: python
 	class TheParents:

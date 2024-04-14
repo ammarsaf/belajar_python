@@ -3,7 +3,7 @@ Panduan
 ===============
 
 
-Di dalam buku ini, penulis telah menggunakan beberapa stail bagi membantu pembaca daripada aspek pemahaman.
+Di dalam buku ini, penulis telah menggunakan beberapa stail bagi membantu pembaca daripada aspek pemahaman.
 
 1. Bagi perkataan yang mempunyai kaitan dengan kod akan ditulis dengan gaya kod `begini`. Contoh:
 

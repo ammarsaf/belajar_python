@@ -8,7 +8,7 @@ Pernahkah anda terfikir, bagaimanakah pintu lif boleh terbuka setelah anda menek
 
 Di sinilah pengaturcaraan bermula.
 
-Kod pengaturcaraan bertindak memberi arahan kepada lif apabila menerima _input_ tertentu daripada pengguna (_user_). Tindakan di dalam kes ini adalah perbuatan anda menekan punat lif. Kod pengaturcaraan telah diprogramkan supaya, apabila punat ditekan, pergerakan kedua-dua pintu lif akan bermula dan membenarkan kita melangkah ke dalam. Sama juga apabila anda ingin menuju ke tingkat 13. Pengaturcaraan memberitahu apabila punat tersebut (ditujukan kepada punat nombor 13) ditekan, lif akan memulakan pergerakan ke atas dengan kelajuan tertentu dan akan berhenti pada takat ketinggian tertentu dimana tingkat 13 berada.
+Kod pengaturcaraan bertindak memberi arahan kepada lif apabila menerima *input* tertentu daripada pengguna (*user*). Tindakan di dalam kes ini adalah perbuatan anda menekan punat lif. Kod pengaturcaraan telah diprogramkan supaya, apabila punat ditekan, pergerakan kedua-dua pintu lif akan bermula dan membenarkan kita melangkah ke dalam. Sama juga apabila anda ingin menuju ke tingkat 13. Pengaturcaraan memberitahu apabila punat tersebut (ditujukan kepada punat nombor 13) ditekan, lif akan memulakan pergerakan ke atas dengan kelajuan tertentu dan akan berhenti pada takat ketinggian tertentu dimana tingkat 13 berada.
 
 Kini terdapat berbagai-bagai jenis bahasa pengaturcaraan dalam dunia. Antaranya ialah, C++, C+, R, Python,  dan juga bahasa yang seakan pengaturcaraan tetapi bukan seperti HTML, PHP, Java dan sebagainya yang digunakan dalam pembinaan laman sesawang. Dalam naskah ini, kita cuma memfokuskan bahasa pengaturcaraan Python sahaja.
 

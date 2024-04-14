@@ -1,6 +1,6 @@
-=============
+====================
 Apa itu Python
-=============
+====================
 
 Cuba bayangkan anda ingin menuju ke pangsapuri rakan anda di tingkat 13. Anda menuju ke bahagian lif yang berada di bahagian tengah bangunan. Apabila anda ingin menaiki sebuah lif, anda akan menekan punat lif dan menunggu beberapa ketika sebelum pintu lif itu terbuka. Setelah beberapa ketika, pintu lif pun terbuka sendiri dan anda melangkah ke dalam. Anda mahu menuju ke sebuah rumah di dalam bangunan itu, lalu anda menekan punat 13 pada dinding lif dan kemudian lif akan bergerak ke atas sambil anda menunggu lif tiba. Setelah beberapa ketika, pintu lif pun terbuka dan anda melangkah keluar.
 

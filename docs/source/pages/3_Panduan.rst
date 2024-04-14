@@ -6,9 +6,12 @@ Panduan
 Di dalam buku ini, penulis telah menggunakan beberapa stail bagi membantu pembaca daripada aspek pemahaman.
 
 1. Bagi perkataan yang mempunyai kaitan dengan kod akan ditulis dengan gaya kod `begini`. Contoh:
-`print(“hello dunia!”)`
 
-2. Kod akan ditulis dengan simbol awalan **>>>** bagi yang membawa maksud kod bermula di sini. Anda boleh tiru dan tampal kod ini ke dalam IDE (rujuk tajuk seterusnya) terus untuk mencubanya sendiri!
+.. code-block:: python
+
+    print(“hello dunia!”)
+
+2. Kod akan ditulis dengan simbol awalan ``>>>`` bagi yang membawa maksud kod bermula di sini. Anda boleh tiru dan tampal kod ini ke dalam IDE (rujuk tajuk seterusnya) terus untuk mencubanya sendiri!
 
 3. Walaubagaimanapun, penulis berharap pembaca dapat mencuba untuk menulis kod ini sendiri berbanding *copy and paste* kerana ini dapat meningkatkan pemahaman pembaca dengan lebih baik.
 

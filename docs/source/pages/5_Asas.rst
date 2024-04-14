@@ -110,7 +110,9 @@ Daripada subtopik ini, anda telah memahami bagaimana pengaturcaraan berfungsi di
 
 Setelah memahami tentang mekanisma mudah ini, ayuh kita lanjut kepada kod yang bertindak untuk menghasilkan *output* akhir sesebuah kod iaitu, `print ()`.
 
-##  ***Print Function***
+-------------------
+Print Function
+-------------------
 
 · **print ( )**
 

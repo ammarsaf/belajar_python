@@ -1592,11 +1592,12 @@ Kita mulakan dengan kod ringkas:
 
 .. code-block:: python
 
-    try:
-		x = "hello world"
-		print (x)
+
+        try:
+	  x = "hello world"
+	  print (x)
 	except:
-		print ('Please define variable x.')
+	  print ('Please define variable x.')
 
 .. code-block:: python
 
@@ -1608,8 +1609,8 @@ Kita cuba hasilkan ralat dengan tidak meletakkan nilai-x;
 
 .. code-block:: python
 
-    try:
-		print (x)
+    	try:
+	  print (x)
 
     except:
 		print ('Ralat di sini')

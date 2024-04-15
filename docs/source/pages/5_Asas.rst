@@ -1577,7 +1577,7 @@ Dalam Python, kita boleh mengendalikan ralat dengan menggunakan **try****, excep
 Try, Except, Finally
 ---------------------------------
 
-Pertamanya kita perlu memahami dahulu maksud **try****, except** dan **finally.**
+Pertamanya kita perlu memahami dahulu maksud ``try``, ``except`` dan ``finally``.
 
 .. list-table:: Kata kunci dan Maksud
 

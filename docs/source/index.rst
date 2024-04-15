@@ -3,8 +3,12 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Jom Belajar Python!
+
+Jom Belajar Python! 🐍
 ==========================================
+
+Belajar asas Python dalam Bahasa Melayu menggunakan 
+buku digital ini. 
 
 .. toctree::
    :maxdepth: 10

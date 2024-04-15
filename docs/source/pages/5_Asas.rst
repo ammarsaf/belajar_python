@@ -1099,7 +1099,9 @@ Kod di atas menggunakan data dalam bentuk **dictionary**. Dalam *loop* for, kod 
 
 Data pula telah menggunakan **.items()** dimana salah satu metod Dictionary yang mana berfungsi untuk memasangkan key dan value di dalam dictionary. Apa yang ingin disampaikan adalah, anda boleh menggunakan lebih daripada 1 *variable* di dalam *loop* for bagi menjalankan iteration.
 
-####  **range ( )**
+--------------------------
+range()
+--------------------------
 
 Selain daripad menggunakan list untuk menyenaraikan data, **range()** juga boleh digunakan di dalam *for loop*. **range()** berfungsi bagi menyenaraikan **nombor** dengan julat tertentu.
 
@@ -1241,7 +1243,8 @@ Apabila *loop* bertemu dengan nilai k baharu yang bernilai 4, maka *loop* akan t
 
 *Loop* akan melangkau nilai 4 apabila *loop* sampai ke nilai k baharu 4 dan meneruskan *loop* hingga ke nilai 7 dan berhenti.
 
-###  **While** **True**
+While True
+-------------------------
 
 Dalam *loop*  yang sebelum ini, kita dapat lihat dimana *loop* tersebut mempunyai had tertentu sebelum ia berhenti pada suatu keadaan yang telah ditetapkan.
 
@@ -1324,7 +1327,8 @@ Jika anda buntu semasa menulis kod, berundur selangkah ke belakang dan lukis Car
 
 Praktis ini sangat baik dan lama kelamaan, kita dapat membina sendiri Carta Alir di dalam minda sekalipun tanpa melukis di atas kertas.
 
-###  **Nested** **loop** 
+Nested loop
+-----------------------------
 
 *Nested* *loop*  adalah sebuah kod *loop* yang berada di dalam sebuah *loop* yang lain. Perkataan *nested* (sarang) digunakan kerana ia seperti seekor burung yang sedang duduk di dalam sebuah sarang yang mengelilinginya. Struktur *l**oop* ini boleh wujud samada *loop* luarnya adalah *loop*-for di dalamnya *loop*-while, ataupun sebaliknya, ataupun kedua-duanya adalah lingakaran yang sama.
 
@@ -1388,7 +1392,9 @@ Dibawah penulis sertakan gambaran carta alir bagaimana kod diatas berfungsi; (ab
 
 -- gambar
 
-##  Perenggan
+------------------
+Perenggan
+------------------
 
 · Indentation
 
@@ -1455,7 +1461,9 @@ Dapat diperhatikan di dalam kod while loop, persamaan i = i + 1 berada di luar k
 
 Mengikut gambarajah di atas, kod bermula dengan while **True**, dimana ini memberi arahan kepada Python untuk terus menerus menjalankan kod dan menghasilkan *string* “Counting is processed” pada berikutnya. Kod digerakkan menggunakan persamaan **i = i + 1** dan diberikan sebuah kondisi iaitu jika i bersamaan dengan 5, makan kod akan diberhentikan dengan arahan break. Maka terhasillah *output* yang ditunjukkan di atas.
 
-##  **Library**
+---------------------
+Library
+---------------------
 
 Secara amnya, *library* adalah satu himpunan kod yang dikumpulkan di dalam satu ruang bernama *package**.* Setiap *library* mempunyai kegunaan tertentu seperti perkiraan Matermaik, membuat graf, mengumpul data dan sebagainya. *Package* pula terdiri daripada himpunan *module* iaitu kod-kod yang menjalankan fungsi tertentu.
 
@@ -1477,7 +1485,8 @@ Selain daripada itu, terdapat juga *library* yang digunakan untuk proces *web sc
 
 · Beautifulsoup
 
-###  **numPy**
+numPy
+------------------
 
 Numpy atau Number Python adalah sebuah *library* yang menyediakan fungsi berkaitan dengan matematik dan juga matriks.
 
@@ -1526,7 +1535,9 @@ Anda juga boleh menyeru nombor, lajur dan baris di dalam *array* dengan mengguna
 
 Pada kod pertama, c[0,1] bermakna nilai pada lajur 0 iaitu lajur pertama (ingat semula dalam topik list dimana indeks bermula dari 0) dan juga baris 1 dimana baris kedua.
 
-###  **dir( )**
+----------------------
+dir()
+----------------------
 
 Bagi setiap *library*, terdapat pelbagai modul dan fungsi yang telah tersedia untuk digunakan oleh pengaturcara. Modul dan fungsi ini boleh disemak dengan menggunakan fungsi **dir ()** dengan seperti contoh berikut,
 

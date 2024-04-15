@@ -120,15 +120,15 @@ Penyu akan meninggalkan kesan warna hitam seperti dakwat lukisan apabila dia ber
 	* - t.backward(jarak)
 	  - Arahan mengundur
 	* - t.right (sudut)
-	  - Arahan berputar ke kanan |
+	  - Arahan berputar ke kanan
 	* - t.setposition(koordinat-x, koordinat-y)
-	  - Arahan menetapkan posisi dalam nilai koordinat. (anda boleh menetapkan mod *grid* pada tempat dimana penyu bermain untuk menentukan posisinya.) |
+	  - Arahan menetapkan posisi dalam nilai koordinat. (anda boleh menetapkan mod *grid* pada tempat dimana penyu bermain untuk menentukan posisinya.) 
 	* - t.home( )
-	  - Arahan untuk kembali semula ke titik mula. |
+	  - Arahan untuk kembali semula ke titik mula. 
 	* - t.penup( )
-	  - Arahan untuk berhenti melukis. (*pen up* adalah seperti mengangkat pen dari kertas) |
+	  - Arahan untuk berhenti melukis. (*pen up* adalah seperti mengangkat pen dari kertas) 
 	* - t.pendown()
-	  - Arahan untuk mula melukis. (*pen down* adalah seperti meletakkan semula pen ke atas kertas.) |
+	  - Arahan untuk mula melukis. (*pen down* adalah seperti meletakkan semula pen ke atas kertas.) 
 
 6. Dengan sedikit kekreatifan, hanya dengan menggunakan arahan di atas, anda boleh melukis pelbagai bentuk seperti contoh dibawah!
 
@@ -153,7 +153,11 @@ Mari tulis kod pertama anda.
 .. code-block:: python
 
 	print("Hello dunia!")
-	Hello dunia!
+
+
+.. code-block:: python
+
+	"Hello dunia!""
 
 
 Seperti *printer*, fungsi **print()** mengeluarkan output pada nilai yang diletakkan dalam kurungan fungsi ini.
@@ -361,13 +365,19 @@ Contoh:
 
     minuman = ['sirap', 'laici', 'kopi', 'teh']
 
+.. list-table:: Index dan string
 
-| **INDEX** | **string** |
-| --------- | ---------- |
-| [0]       | 'sirap',   |
-| [1]       | 'laici'    |
-| [2]       | 'kopi'     |
-| [3]       | 'teh'      |
+	* - Index
+	  - string
+	* - [0]
+	  - 'sirap'
+	* - [1]
+	  - 'laici'
+	* - [2]
+	  - 'kopi' 
+	* - [3]
+	  - 'teh'
+
 
 Berikut adalah cara untuk mengakses item dalam *list:*
 
@@ -479,16 +489,24 @@ Jenis Data
 
 **Jenis Data** *(data type)* adalah konsep di dalam Python dimana setiap data telah dikelaskan mengikut jenis masing masing.
 
-|   |   |
-|---|---|
-|**Nama data**|**Jenis Data**|
-|teks|str (string)|
-|nombor|jenis data: int, float, complex|
-|susunan|list, tuple, range|
-|pemetaan|dict|
-|set|set|
-|boolean|bool|
-|binary|bytes, bytearray, memoryview|
+.. list-table:: Data struktur
+
+	* - Nama data
+	  - Jenis data
+	* - teks
+	  - str (string)
+	* - nombor
+	  - jenis data: int, float, complex
+	* - susunan
+	  - list, tuple, range
+	* - pemetaan
+	  - dict
+	* - set
+	  - set
+	* - boolean
+	  - bool
+	* - binary
+	  - bytes, bytearray, memoryview
 
 Bagi mengenalpasti jenis data, kod boleh ditulis menggunakan type() seperti berikut:
 
@@ -511,17 +529,26 @@ Bagi mengenalpasti jenis data, kod boleh ditulis menggunakan type() seperti beri
 
 Adakalanya, jenis data yang kita tulis akan dibaca dengan jenis data berlainan daripada apa yang kita mahukan. Justeru itu, Python menyediakan cara untuk menetapkan secara spesifik data tersebut menggunakan arahan tertentu seperti berikut:
 
-|   |   |
-|---|---|
-|*Data Type*|Contoh|
-|**str ()**|**x = str ('hello dunia!')**|
-|**int ()**|**x = int (30)**|
-|**float ()**|**x = float (0.124)**|
-|**complex()**|**x = complex (2j)**|
-|**list()**|**x = list (('pisang', 'manggis', 'rambutan'))**|
-|**tuple ()**|**x = tuple (('pisang', 'manggis', 'rambutan'))**|
-|**dict()**|**x = dict (nama = 'Mat', umur = '10')**|
-|**range()**|**x = range (78)**|
+.. list-table:: Data struktur
+
+	* - Data Type
+	  - Contoh
+	* - str ()
+	  - x = str ('hello dunia!')
+	* - int ()
+	  - x = int (30)
+	* - float ()
+	  - x = float (0.124)
+	* - complex()
+	  - x = complex (2j)
+	* - list()
+	  - x = list (('pisang', 'manggis', 'rambutan'))
+	* - tuple ()
+	  - x = tuple (('pisang', 'manggis', 'rambutan'))
+	* - dict()
+	  - x = dict (nama = 'Mat', umur = '10')
+	* - range()
+	  - x = range (78)
 
 Dengan menetapkan *Data Type*  metod, anda dapat menukar jenis data asal kepada yang dikehendaki kepada Python. 
 
@@ -642,12 +669,17 @@ Sebagai contoh, 14 > 2 adalah **True**, manakala 1 == 5 adalah **False**. Kita s
 
 Di dalam Boolean, terdapat kod yang dipanggil Boolean Operator (BO) yang boleh ditulis dalam pembentukan Boolean. BO ini boleh dibahagikan kepadaa 3 kumpulan iaitu, *Logical Operator*, *Identity Operator* dan *Membership Operator**.*
 
-|   |   |
-|---|---|
-|Jenis operator|Contoh Operator|
-|*Logical Operator*<br><br>- digunakan untuk menggabungkan pernyataan bersyarat (*conditional* )|**and      or      not**|
-|*Identity Operator*<br><br>- digunakan untuk membandingkan objek|**is     is not**|
-|*Membership Operator*<br><br>- digunakan untuk menguji JIKA terdapat kehadiran urutan dalam objek.|**in     not in**|
+.. list-table:: Jenis Operator dan Contoh
+
+	* - Jenis operator
+	  - Contoh Operator
+	* - Logical Operator - digunakan untuk menggabungkan pernyataan bersyarat (*conditional*)
+	  - ``and or not``
+	* - Identity Operator - digunakan untuk membandingkan objek
+	  - ``is  -- is not``
+	* - Membership Operator - digunakan untuk menguji JIKA terdapat kehadiran urutan dalam objek
+	  - ``in  -- not in``
+
 
 Bagi setiap BO terdapat kegunaan yang berbeza.
 
@@ -801,14 +833,15 @@ Bagaimana pula dengan **else**?
 · **else** digunakan untuk syarat akhir code tanpa apa-apa syarat yang mengikatnya, dimana bererti, selain daripada syarat-syarat yang dikenakan di atasnya, akan terpakai padanya.
 
 Contoh kod;
+
 .. code-block:: python
 
     x = 6
     if x > 10:
     	print('x is bigger than 10')
-    elif x = = 10:*
-    	print('x is equal to 10.')*
-    else:**
+    elif x == 10:
+    	print('x is equal to 10.')
+    else:
 		print('x is less than 10')
 
 .. code-block:: python
@@ -862,7 +895,7 @@ Contoh,
 
 	17
 
-Bilangan **argument* adalah tidak terbatas. Bergantung kepada fungsi apa yang ingin ditulis oleh pengaturcara.
+Bilangan *argument* adalah tidak terbatas. Bergantung kepada fungsi apa yang ingin ditulis oleh pengaturcara.
 
 .. code-block:: python
 
@@ -1032,12 +1065,13 @@ Selain daripada itu, terdapat satu lagi cara bagi memberhentikan proses *loop* i
 Tidak hanya memberhentikan, kita juga boleh menyambung proses *loop* dengan menggunakan kata kunci **continue**.
 
 Contoh;
+
 .. code-block:: python
 
     nombor = [1,2,3,4,5]
     for x in nombor:
-      if x == 3:
-        continue
+    	if x == 3:
+        	continue
     print(x)
 
 .. code-block:: python
@@ -1111,13 +1145,18 @@ Tanpa meletakkan nilai akhir dan nilai anjak:
 	4
 	3
 
+.. list-table:: Index dan Output
 
-| **Indeks** | **Nilai output** |
-| ---------- | ---------------- |
-| 1          | 0                |
-| 2          | 1                |
-| 3          | 2                |
-| 4          | 3                |
+	* - Indeks
+	  - Nilai output
+	* - 1
+	  - 0
+	* - 2
+	  - 1
+	* - 3
+	  - 2
+	* - 4
+	  - 3
 
 ---------------------------
 enumerate ( )
@@ -1335,7 +1374,7 @@ Apa yang terjadi dalam *loop* ini? Mari kita pergi satu persatu.
 
 · Kemudian kod mencipta sebuah *loop* tersarang yang terdiri daripada *loop* luar dan *loop* dalam.
 
-· *L**oop* luar akan mengalami *iteration* terlebih dahulu dimana 0, 1, dan 2 akan dihasilkan. Sintaks "*loop* berlangsung..." akan dihasilkan. Tetapi *iteration* ini tidak sempurna selagi mana *loop* dalam tidak menyempurnakan *loop**-*nya terlebih dahulu.
+· *Loop* luar akan mengalami *iteration* terlebih dahulu dimana 0, 1, dan 2 akan dihasilkan. Sintaks "*loop* berlangsung..." akan dihasilkan. Tetapi *iteration* ini tidak sempurna selagi mana *loop* dalam tidak menyempurnakan *loop*-nya terlebih dahulu.
 
 · Anda dapat lihat terdapat pasangan nombor yang terhasil, dimana nombor kiri adalah hasil *loop* luar (*variable-i)*, nombor kanan adalah hasil *loop* dalam (*variable-j)*.
 
@@ -1445,7 +1484,8 @@ Numpy atau Number Python adalah sebuah *library* yang menyediakan fungsi berkait
 Dengan menggunakan numPy, anda boleh mencipta sebuah matriks (*array*) dan melakukan operasi kepadanya.  Mari kita lihat contoh penggunaan numPy.
 
 .. code-block:: python
-import numpy as np
+
+	import numpy as np
 
     a = np.array([[1,2,4], 
                 [3,5,7], 
@@ -1455,11 +1495,14 @@ import numpy as np
                  [2,4,3]])
     c = b - a
     print(c)
-[[ 1  3  5]
 
- [-4  3  2]
+.. code-block:: python
 
- [-1  0 -3]]
+	[[ 1  3  5]
+
+	[-4  3  2]
+
+	[-1  0 -3]]
 
 Dalam kod di atas, *array* telah dicipta dengan kod np.array dan ditulis di dalamnya matriks dalam bentuk list. Jika dapat dilihat, ini adalaha matriks 3 X 3, dengan 3 lajur dan 3 baris.
 
@@ -1473,10 +1516,13 @@ Anda juga boleh menyeru nombor, lajur dan baris di dalam *array* dengan mengguna
     print(c[0])
     print(c[0, :])
     print(c[:, 0])
-3
-[ 1  3  5]
-[ 1  3  5]
-[ 1  -4  -1]
+
+.. code-block:: python
+
+	3
+	[ 1  3  5]
+	[ 1  3  5]
+	[ 1  -4  -1]
 
 Pada kod pertama, c[0,1] bermakna nilai pada lajur 0 iaitu lajur pertama (ingat semula dalam topik list dimana indeks bermula dari 0) dan juga baris 1 dimana baris kedua.
 
@@ -1522,18 +1568,21 @@ Try, Except, Finally
 
 Pertamanya kita perlu memahami dahulu maksud **try****, except** dan **finally.**
 
-| Kod         | Maksud                                                                 |
-| ----------- | ---------------------------------------------------------------------- |
-| **try**     | Menguji baris-baris kod ini sama ada terdapat ralat atau tidak padanya |
-| **except**  | Jika ralat berlaku, buat sesuatu.                                      |
-| **finally** | Buat sesuatu jika ralat tidak berlaku atau berlaku.                    |
+.. list-table:: Kata kunci dan Maksud
+
+	* - try
+	  - Menguji baris-baris kod ini sama ada terdapat ralat atau tidak padanya
+	* - except
+	  - Jika ralat berlaku, buat sesuatu
+	* - finally
+	  - Buat sesuatu jika ralat tidak berlaku atau berlaku.   
 
 Kita mulakan dengan kod ringkas:
 
 .. code-block:: python
 
     try:
-		x = ‘hello world’
+		x = "hello world"
 		print (x)
 	except:
 		print ('Please define variable x.')

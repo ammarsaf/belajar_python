@@ -2,7 +2,7 @@
 OOP
 ===============
 
-Pengaturcaraan Berorientasi Objek (PBO) atau dalam Inggerisnya, *Object Oriented Programming* (OOP) adalah sebuah gaya pengaturcaraan yan  berko sepkan *class* *object.
+Pengaturcaraan Berorientasi Objek (PBO) atau dalam Inggerisnya, *Object Oriented Programming* (OOP) adalah sebuah gaya pengaturcaraan yang berkonsepkan *class object*.
 
 --------------------
 **Class**
@@ -64,7 +64,7 @@ Metod atau _call function_adalah_function_yang ditulis yang ditulis dalam sebuah
 		info = "This is a simple mathematical operation."
 		date = "4 December 2022"
 		def get_class_info(self):
-			print(“Here is the class info:”, info, date)
+			print("Here is the class info:", info, date)
 
 4. *Object*
 
@@ -78,7 +78,7 @@ Untuk melaksanakan *method* dalam _class,_ anda perlu menulis satu baris yang di
 		info = 'This is a simple mathematical operation.'
 		date = '4 December 2022'
 		def get_class_info(self):
-			print(“Here is the class info:”, info, date)
+			print("Here is the class info:", info, date)
 
 	my_math = MathOperation()
 	my_math.get_class_info()
@@ -97,7 +97,7 @@ Mari kita kembangkan lagi kod ini dengan beberapa *method*.
 	    val_a = 5
 	    val_b = 3
 	    def get_class_info(self):
-		    print(“Here is the class info:”, info, date)
+		    print("Here is the class info:", info, date)
 	    def add_this(self):
 		    return f'Answer: {val_a + val_b}'
 	    def minus_this(self):
@@ -169,6 +169,7 @@ Object attribute
 - Dengan menggunakan object attribute, object tersebut mempunyai *state* yang yang tersendiri yang akan kekal dan berubah.
 
 .. code-block:: python
+
 	my_math = MathOperation(17, 4)
 
 	print( my_math.add_this())
@@ -177,6 +178,7 @@ Object attribute
 	print( my_math.add_this())
 
 .. code-block:: python
+
 	Answer: 13 battery left: 9
 	Answer: 6 battery left: 8
 	Answer: 6 battery left: 7
@@ -197,6 +199,7 @@ Dalam Python OOP, ini dikenali sebagai *inheritance*.
 Contoh mudah perwarisan:
 
 .. code-block:: python
+
 	class TheParents:	
 		def __init__(self, name):
 			self.name = name
@@ -208,6 +211,7 @@ Dalam kod diatas, ``class TheChild`` telah mewarisi kod daripada ``class ThePare
 Mari kita kembangkan kod diatas supaya **TheC****hild** sdapat mengembakan _class_ nya daripada **The****Parent****s****.**
 
 .. code-block:: python
+
 	class TheParents:
 	def __init__(self, father_name, mother_name):
 		self.father_name = father_name
@@ -216,6 +220,7 @@ Mari kita kembangkan kod diatas supaya **TheC****hild** sdapat mengembakan _clas
 		print(self.father_name, self.mother_name)
 
 .. code-block:: python
+
 	class TheChild(TheParents):
 		def __init__(self, child_name):
 			self.child_name = child_name
@@ -227,6 +232,7 @@ Mari kita kembangkan kod diatas supaya **TheC****hild** sdapat mengembakan _clas
 	child.get_all_family()
 
 .. code-block:: python
+
 	Zuhal Nur
 	Mat
 

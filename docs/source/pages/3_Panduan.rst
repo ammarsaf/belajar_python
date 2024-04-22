@@ -9,7 +9,7 @@ Di dalam buku ini, penulis telah menggunakan beberapa stail bagi membantu pembac
 
 .. code-block:: python
 
-    print(“hello dunia!”)
+    print('hello dunia!')
 
 2. Kod akan ditulis dengan simbol awalan ``>>>`` bagi yang membawa maksud kod bermula di sini. Anda boleh tiru dan tampal kod ini ke dalam IDE (rujuk tajuk seterusnya) terus untuk mencubanya sendiri!
 
